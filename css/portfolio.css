@@ -1,0 +1,1103 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'EllisDigitalCoding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'KoddiudOngodic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/KoddiUDOnGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoddiudOngodic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/KoddiUDOnGothic-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'EllisDigitalCoding';
+    font-size: 1rem;
+    min-width: 320px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+} 
+main section {
+    width: 100%;
+    height: 100vh;
+    padding: clamp(2rem, 5vw, 6rem) 0;
+}
+
+
+header .fixed .list {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    color: white;
+    z-index: 999;
+    left: 2vw;
+    width: 30%;
+    padding: 0em;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+    height: 2.8vh;
+    font-size: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    gap: 2vw;
+}
+header .fixed .list #page1 {
+    position: relative;
+}
+header .fixed .list p {
+    display: none;
+    position: absolute;
+    top: 0; 
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 36, 36);
+    font-size: clamp(1.25rem, 0.75rem + 0.625vw, 1.75rem);
+    /* transition: all 0.8s ease-in-out; */
+}
+
+
+header .fixed .list img {
+    max-width: 105px;
+    margin-top: 2.5vh;
+
+}
+header .fixed .list li {
+    font-size: 1rem;
+    cursor: pointer;
+} 
+
+/* opening */ 
+main .opening {
+    width: 100%;
+    height: 100vh;
+}
+main h2 {
+    font-family: 'EllisDigitalCoding';
+    letter-spacing: 2px;
+}
+
+ main section .loop {
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ main section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+ }
+
+main .title {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+main section .name {
+    width: 100%;
+}
+main .opening .name h1 {
+    font-family: 'EllisDigitalCoding';
+    color: rgb(255, 255, 255);
+    font-size: clamp(3rem, 6vw, 7rem);
+    text-shadow: 4px 0px 2px rgb(53, 53, 53), -3px 0 2px #c4c4c4;
+    letter-spacing: 0.08em;
+    margin-top: 7vh;
+    width: 100%;
+    padding: 0;
+}
+
+main .opening .portfolio {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20%;
+    height: 10vh;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: 2px inset #a8a8a8;
+    box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.3); 
+    transition: all 2s ease;
+    margin: 0 auto;
+    margin-top: clamp(5vh, 10vh, 17vh); margin-bottom: 2vh; 
+    cursor: pointer;
+}
+main .opening .portfolio:hover {
+    animation: glow 0.4s linear;
+    box-shadow: 0 0 20px 10px rgb(192, 192, 192);
+}
+
+main .opening .menu {
+    display: none;
+    line-height: clamp(2rem, 3vw, 3.5rem);
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    height: 100%;
+    text-shadow: 3px 0px 2px rgba(69, 69, 248, 0.555);
+}
+
+
+/* project */
+main .project {
+    background-color: rgb(36, 36, 36);
+    background: url(../images/bg07132.jpg) no-repeat center/cover;
+    height: 100vh;
+} 
+
+main .project .innerp {
+    display: flex;
+    max-width: 90%;
+    height: 72vh;
+    margin: 0 auto;
+    margin-top: 8vh;
+}
+main .project .innerp .text-project {
+    flex: 1;
+    color: white;
+}
+main .project .innerp .text-project h2 {
+    font-size: 2.2rem;
+}
+main .project .innerp .text-project p {
+    font-size: 1.2rem;
+}
+
+main .project .innerp nav {
+    flex: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+main .project .innerp nav .banner {
+    height: 45%;
+    width: 100%;
+}
+main .project .innerp nav p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+main .project nav .video {
+    width: 100%;
+    height: 100%;
+}
+main .project nav .video iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .project .innerp nav .sub {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+} 
+
+
+
+/* poster,albumcover,concept board자리 */
+main .project nav .banner .sub img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+main .project nav .albumcover {
+    background-color: lightblue;
+}
+main .project nav .board {
+    background-color: grey;
+} 
+main .project .innerp nav .banner .making {
+    width: 40%;
+}
+
+main .project .innerp nav .banner .making iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .project nav .sub p {
+    flex: 2;
+}
+
+/* archive */
+main .archive {
+    color: white;
+    background-color: #000000;
+} 
+main .archive .innera {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    flex-direction: column;
+}
+main .archive h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3vh;
+    color: rgb(255, 255, 255);
+} 
+main .archive .innera nav {
+    display: flex;
+    gap: 5vw;
+    width: 100%;
+    height: 70vh;
+    margin: 1vh auto;
+
+}
+main section nav a {
+    width: 30%;
+}
+main .archive nav a:hover {
+    box-shadow: 0px 0px 10px 5px rgba(188, 253, 255, 0.5);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid rgba(180, 241, 238, 0.5);
+}
+main .archive nav .one {
+    background: url(../images/icecream.jpg) no-repeat center/cover;
+}
+main .archive .two {
+    background: url(../images/product2.jpg) no-repeat center/cover;
+}
+main .archive .three {
+    background: url(../images/can.jpg) no-repeat center/cover;
+}
+
+
+/* field */
+main .field {
+    background-color: black;
+}
+main .field h2 {
+    color: white;
+    font-size: 2rem;
+
+}
+
+main .field .innerf {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    margin-top: 3vh;
+}
+main .field .innerf .text {
+    flex: 2;
+    width: 100%;
+}
+main .field .innerf .shoot  {
+    display: flex;
+    justify-content: space-between;
+    flex: 7;
+    width: 100%;
+
+}
+main .field .innerf .shoot iframe {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* profile */
+.profile-buttons {
+    display: none;
+}
+main .profile {
+    font-size: 0.9rem;
+    color: white;
+    background: url(../images/bg07132.jpg) no-repeat center/cover;
+} 
+main .profile .innerpr {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+main .profile .innerpr h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+main .profile-mobile {
+    display: none;
+}
+
+/* 프로필박스 */
+main .profile .innerpr .box {
+    width: 90%;
+    height: 75vh;
+    margin: 0 auto;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vh;
+    padding: 2em;
+}
+main .profile-desktop h3 {
+    font-size: 1.1rem;
+}
+
+main .box .left {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 95%;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+} 
+main .profile-desktop .left h3 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0.5vh;
+    font-size: 1.3rem;
+}
+main .box .left .interview, .skillinner {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(206, 206, 206, 0.9);
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'EllisDigitalCoding';
+}
+
+main .box .left .interview {
+    height: 50%;
+}
+
+main .box .interview iframe {
+    width: 100%;
+    height: 100%; 
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+main .box .left .skillinner .skill {
+    border: 1px solid #6b6b75;
+    border-radius: 0.5rem;
+    background-color: #0000004b;
+    /* background-color: linear-gradient(-5deg, rgba(0, 0, 0, 0.4) 5%, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.4) 95%); */
+    border: 1px outset rgba(168, 168, 168, 0.2);
+    padding: 1.3vh 1.3vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+main .innerpr .box .skill img {
+    width: 95%;
+}
+main .innerpr .box .info .image {
+    width: 100%;
+    height: 100%;
+}
+
+main .profile-desktop .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 3;
+    height: 90%;
+    margin-top: 2vh;
+}
+main .profile-desktop .info .inner .inform h3 {
+    font-size: 1.2rem;
+}
+main .profile-desktop .info .inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5vh;
+    font-family: 'EllisDigitalCoding';
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+main .profile-desktop .info .lang a {
+    cursor: pointer;
+
+}
+main .profile-desktop .info .lang a.on {
+    color: #ff6459;
+}
+main .profile-desktop .info nav {
+    height: 100%;
+    width: 100%;
+}
+/* 소개 */
+main .profile-desktop .info nav p {
+    font-family: 'KoddiudOngodic';
+    background: linear-gradient(90deg, rgba(2, 2, 2, 0.6) 10%, rgba(110, 110, 110, 0.3), rgba(2, 2, 2, 0.6) 90%);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px outset rgba(196, 196, 196, 0.2);
+    border-radius: 0.3rem;
+    line-height: 1.8rem;
+    height: fit-content;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+main .profile .info .access {
+    font-family: 'EllisDigitalCoding';
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px #141414;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    background: url(../images/gridhole.jpg) no-repeat center/cover;
+    border-radius: 50%;
+    padding: 0.4em;
+    box-shadow: 0px 0px 50px rgba(255, 254, 254, 0.5);
+    border: 3px outset rgba(206, 206, 206, 0.5);
+    width: 50%;
+    margin: 0 auto;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shadow 1s infinite alternate;
+} 
+@keyframes shadow  {
+    0% {
+        box-shadow: 5px 0px 50px rgba(255, 254, 254, 0.5), -5px 0px 50px rgba(255, 254, 254, 0.5) ;
+    }
+    50% {
+        box-shadow: 0px 0px 50px rgba(206, 244, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0px 0px 50px rgba(173, 239, 255, 0.5);
+    }
+}
+
+
+main .box .right {
+    flex: 1.5;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+} 
+
+main .right .photo {
+    width: 100%;
+    height: 70%; 
+    background: url(../images/profileref.jpg) no-repeat center/cover;
+    border-radius: 0.3rem;
+}
+main .box .right .sns {
+    position: relative;
+    height: 16%;
+    border: 1px outset rgba(196, 196, 196, 0.2);
+    border-radius: 0.8rem;
+}
+main .box .right .sns h3 {
+    position: absolute;
+    top: -3vh; left: 0.5rem;
+}
+
+main .box .right .sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+main .box .right .sns a img {
+    width: 95%;
+}
+
+
+/* memory */
+main .memory-section {
+    background-color: black;
+    background: url(../images/bg0713.jpg) no-repeat center/cover;
+} 
+main .memory-section .inner {
+    display: grid;
+    width: 90%;
+    height: auto;
+    margin: 5vh auto;
+    grid-template-columns: 200px repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+main .memory-section .inner .text {
+    width: fit-content;
+    grid-row: 1 / 4;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    padding: 1em 2em;
+    height: 50vh;
+    border: 2px double rgba(141, 141, 141, 0.4);
+    background: url(../images/memory.png) no-repeat center/cover;
+
+}
+
+main .memory-section .inner .text h2 {
+    font-size: 1.8rem;
+    text-shadow: 1px 2px 2px rgba(150, 180, 180, 0.9);
+
+}
+main .memory-section .inner .text p {
+    font-size: 0.8rem;
+}
+
+main .memory-section .inner img {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+main .memory-section .inner figure:hover {
+    z-index: 999;
+    animation-play-state: running;
+    transform: scale(1.5)
+}
+
+main .memory-section .inner figure {
+    transition: transform 0.5s ease;
+    position: relative;
+    animation: shake 0.5s infinite alternate linear;
+    animation-play-state: paused;
+
+}
+@keyframes shake {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+} 
+main .memory-section br {
+    display: none;
+}
+
+
+main .memory-section .inner figure p {
+    font-family: 'KoddiudOngodic';
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: rgba(87, 87, 87, 0.774);
+    font-size: clamp(0.875rem, 0.833vw, 1.125rem);
+}
+
+
+/* mobile */
+@media screen and (min-width : 769px){
+    main .project .innerp .sh, .buttons {
+        display: none;
+    }
+    main .project .sub {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    main section {
+        margin: 0;
+    }
+
+    main .opening {
+        width: 100%;
+    }
+    main .opening .loop video {
+        object-fit: cover;
+        height: 100vh;
+    }
+    main .opening .menu {
+        margin: 0 auto;
+        display: block;
+        font-size: 2rem;
+        line-height: 5rem;
+        margin-top: 12vh;
+        }
+    main .opening .menu a {
+        background-color: rgba(0, 0, 0, 0.2);
+        letter-spacing: 2px;
+        padding: 0 1em;
+    }
+    main .opening .portfolio {
+        display: none;
+    }
+
+    header .fixed .list img {
+        max-width: 80px;
+    }
+    header .fixed .list {
+        display: none;
+    }
+    main .project .innerp {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 3vh auto;
+        height: 90%;
+    }
+ 
+    main .project .innerp h2{
+        margin-bottom: 3vh;
+    }
+    main .project .innerp .text-project p {
+        display: none;
+    }
+    main .sh .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+      }
+    main .project .innerp .video iframe {
+        width: 95%;
+        height: 30vh;
+    }
+    main .project .banner {
+        display: none;
+    }
+    main .project .sh {
+    width: 95%;
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background: none; 
+    margin-top: 10px;
+    }
+
+    main .project .sh .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    main .project .sh .swiper-slide {
+        background-color: black
+    }
+    
+
+    main .project .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    main .swiper-pagination-bullet {
+        background-color: white;
+        transform: opacity(0.8);
+    }
+    main .swiper-pagination-bullet-active {
+        background-color: rgb(255, 255, 255);
+    }
+    main .buttons {
+        min-width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    main .project .innerp .buttons li {
+        cursor: pointer;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding: 0.6em 0.8em;
+    }
+    main .buttons li.on {
+        background: radial-gradient(rgba(190, 190, 190, 0.7) 3%, transparent 65%);
+    }
+
+
+/* 아카이브 */ 
+main .archive .innera nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main .archive .innera {
+    width: 100%;
+    height: 80vh;
+}
+main .archive .innera nav a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main .archive .innera nav a p {
+    color: white;
+    position: absolute;
+    transform: translateY(-22px);
+}
+
+main .field .innerf {
+    flex-direction: column;
+    width: 95%;
+    height: 80vh;
+}
+main .field .innerf .text {
+    text-align: center;
+}
+  /* 프로필 */
+
+    main .profile .innerpr {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 1vh auto;
+    }
+
+    main .profile .innerpr > h2 {
+        margin: 20px 0;
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    main .profile .profile-desktop {
+        display: none !important;
+    }
+    main .profile .innerpr .profile-mobile {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        min-height: 0;
+        overflow: hidden;
+    }
+
+    main .profile .profile-swiper {
+        width: 100%;
+        height: 100%;
+        color: white;
+        
+    }
+
+    main .profile .profile-swiper .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .profile .profile-slide {
+        width: 100%;
+        height: 98%;
+        border-radius: 10px;
+        background-color: rgba(192, 192, 192, 0.308);
+        margin: 1vh 0;
+        padding: 0.5em 1em;
+        color: #fff;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+
+    main .profile .profile-buttons {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    main .profile .profile-buttons li {
+        flex: 1;
+        padding: 0.7em;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 1.2rem;
+        height: fit-content;
+        text-align: center;
+        border-radius: 50%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    main .profile .profile-buttons li.on {
+        color: white;
+        background: radial-gradient(rgba(177, 177, 177, 0.8) 3%, transparent 65%);
+    }
+
+    main .mobile-info {
+        display: block;
+        height: 100%;
+    }
+
+    /* 모바일 소개  */
+    main .mobile-info .inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        margin: 2vh auto;
+    }
+    main .mobile-info .inner img {
+        width: 100%;
+        height: 45%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px double rgba(124, 124, 124, 0.8);
+    }
+    main .mobile-info .text {
+        width: 100%;
+        height: 35%;
+        margin: 2vh auto;
+        text-align: center;
+    }
+    main .mobile-info .inner .text p {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    main .mobile-info .sns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+
+    main .mobile-info .sns a img {
+        border: none;
+        width: 100%;
+    }
+
+
+
+
+    /* 스킬 영역 */
+    
+    main .mobile-skills .cubes {
+        width: 100%;
+        max-height: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .mobile-skills .cubes img {
+        width: 38%;
+    }
+
+    main .mobile-interview  iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        padding: 1em 0.5em;
+    }
+
+    main .memory-section {
+        display: none;
+    }
+
+    main .mobile-memory .inner {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 5vh auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    position: relative;
+    overflow-y: scroll;
+    margin: 15px auto;
+    }
+    div::-webkit-scrollbar {
+        width: 7px;
+    }
+    div::-webkit-scrollbar-thumb {
+      background-color: #b3b3b3;
+    }
+    div::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.089);
+    }
+    main .mobile-memory .inner figure img {
+    display: block;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 100%;
+    height: auto;
+    object-fit: contain;
+    }
+    main .mobile-memory .inner figure {
+        position: relative;
+    }
+    main .mobile-memory .inner figure p {
+    font-family: 'KoddiudOngodic';
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: rgba(87, 87, 87, 0.774);
+    font-size: 0.8rem;
+    }
+    
+
+}
+
+@media screen and (max-width : 425px) {
+    main .opening .name h1 {
+        margin: 13vh 0;
+        font-size: 2.2rem;
+        text-shadow: 2px 0px 2px rgb(53, 53, 53), -1.5px 0 2px #c4c4c4;
+    }
+    main .opening .menu {
+        margin: 5vh 0;
+        font-size: 1.7rem;
+        line-height: 3.5rem;
+    }
+    main .opening .menu a {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    main .project .innerp .buttons li {
+        font-size: 0.9rem;
+    }
+    main .project .innerp .buttons {
+        width: 100%;
+    }
+    main .profile .innerpr h2 {
+        font-size: 1.5rem;
+        margin: 18px auto;
+    }
+    main .profile .profile-mobile .swiper-slide {
+        height: 70vh;
+    }
+    main .profile .mobile-info .inner img {
+        height: 40%;
+    }
+    main .profile .mobile-info .inner .text {
+        height: 30%
+        
+    }
+    main .profile .mobile-info .inner .text p {
+        font-size: 0.95rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    main .profile .mobile-info .inner .sns {
+        height: 30%;
+    }
+    main .profile .mobile-info .inner .sns a {
+        font-size: 0.75rem;
+        border: 2px outset rgba(124,124,124,0.8);
+        border-radius: 5px;
+        padding: 0.5em;
+        width: 32%;
+    }
+    main .profile .profile-buttons li {
+        font-size: 0.85rem;
+    }
+    main .profile .profile-buttons {
+        margin-bottom: 0;
+    }
+    main .profile .mobile-memory .inner {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    main .profile .mobile-memory .inner figure p {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width : 375px) {
+    main .profile .mobile-info .inner .text p {
+        font-size: 0.8rem;
+    }
+    main .profile .mobile-skills .cubes img {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width : 320px) {
+    main .section h2 {
+        font-size: 1.5rem;
+    }
+
+    main .archive .innera nav a {
+        margin-top: 10px;
+    }
+    main .project .innerp .buttons li {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    main .profile .mobile-info .inner .text p {
+        font-size:  0.71rem;
+        line-height: 1.5rem;
+    }
+    main .profile .mobile-info .inner .sns {
+        gap: 6px;
+        margin: 0;
+    }
+    main .profile .mobile-info .inner .sns a {
+        font-size: 0.65rem;
+        width: 36%;
+    }
+    main .profile .mobile-skills .cubes img {
+        margin-top: 5px;
+        width: 50%;
+    }
+
+}
