@@ -65,6 +65,8 @@ header .fixed .list {
     letter-spacing: 1px;
     gap: 2vw;
 }
+
+
 header .fixed .list #page1 {
     position: relative;
 }
@@ -88,6 +90,9 @@ header .fixed .list li {
     font-size: 1rem;
     cursor: pointer;
 } 
+header .fixed .list li:hover {
+    color: rgb(255, 30, 0);
+}
 
 /* opening */ 
 main .opening {
@@ -421,7 +426,7 @@ main .box .interview iframe {
 
 main .box .left .skillinner .skill {
     border: 1px solid #6b6b75;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     background-color: #0000004b;
     /* background-color: linear-gradient(-5deg, rgba(0, 0, 0, 0.4) 5%, rgba(117, 117, 117, 0.3), rgba(0, 0, 0, 0.4) 95%); */
     border: 1px outset rgba(168, 168, 168, 0.2);
@@ -445,7 +450,7 @@ main .profile-desktop .info {
     flex-direction: column;
     text-align: center;
     flex: 3;
-    height: 90%;
+    height: 95%;
     margin-top: 2vh;
 }
 main .profile-desktop .info .inner .inform h3 {
@@ -474,8 +479,9 @@ main .profile-desktop .info nav {
 /* 소개 */
 main .profile-desktop .info nav p {
     font-family: 'KoddiudOngodic';
-    background: linear-gradient(90deg, rgba(2, 2, 2, 0.6) 10%, rgba(110, 110, 110, 0.3), rgba(2, 2, 2, 0.6) 90%);
-    font-size: 1.1rem;
+    /* background: linear-gradient(90deg, rgba(2, 2, 2, 0.6) 10%, rgba(110, 110, 110, 0.3), rgba(2, 2, 2, 0.6) 90%); */
+    background: #afadad34;
+    font-size: 1.2rem;
     font-weight: 500;
     border: 1px outset rgba(196, 196, 196, 0.2);
     border-radius: 0.3rem;
@@ -486,20 +492,20 @@ main .profile-desktop .info nav p {
 }
 
 
-main .profile .info .access {
+main .profile .right .access {
     font-family: 'EllisDigitalCoding';
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 20px #141414;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     background: url(../images/gridhole.jpg) no-repeat center/cover;
-    border-radius: 50%;
+    border-radius: 1rem;
     padding: 0.4em;
     box-shadow: 0px 0px 50px rgba(255, 254, 254, 0.5);
-    border: 3px outset rgba(206, 206, 206, 0.5);
-    width: 50%;
+    border: 2px outset rgba(206, 206, 206, 0.5);
+    width: 80%;
     margin: 0 auto;
-    height: 15%;
+    height: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,30 +536,30 @@ main .box .right {
 
 main .right .photo {
     width: 100%;
-    height: 70%; 
+    height: 75%; 
     background: url(../images/profileref.jpg) no-repeat center/cover;
     border-radius: 0.3rem;
 }
-main .box .right .sns {
+main .box .info .sns {
     position: relative;
+    padding: 1em;
+    width: 100%;
     height: 16%;
     border: 1px outset rgba(196, 196, 196, 0.2);
-    border-radius: 0.8rem;
-}
-main .box .right .sns h3 {
-    position: absolute;
-    top: -3vh; left: 0.5rem;
-}
-
-main .box .right .sns {
+    border-radius: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgba(255, 255, 255, 1);
 }
+main .box .info .sns h3 {
+    position: absolute;
+    top: -3vh; left: 0.5rem;
+}
 
-main .box .right .sns a img {
-    width: 95%;
+
+main .box .info .sns a img {
+    width: 75%;
 }
 
 
