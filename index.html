@@ -1,454 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSH</title>
-    <meta name="title" content="서현 포트폴리오(Seohyeon)">
-    <meta name="description" content="Where the scent remains">
-    <meta name="keywords" content="영상편집, 유튜브편집, 인스타광고">
-    <meta name="author" content="박서현">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Seohyeon Park">
-    <meta property="og:title" content="박서현 포트폴리오">
-    <meta property="og:description" content="Where the scent remains">
-    <meta property="og:image" content="images/main.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/portfolio.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-    <script src="js/portfolio.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seohyeon Park — Motion & Visual Design</title>
+  <meta name="description" content="박서현의 영상·그래픽 디자인 포트폴리오. Mortal Archive 앨범 패키지, 비주얼라이저, SNS 영상과 AI 공모전 출품작.">
+  <meta name="author" content="박서현">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seohyeon Park — Motion & Visual Design">
+  <meta property="og:description" content="아이디어를 결과로 만듭니다. 박서현의 영상·그래픽 디자인 포트폴리오.">
+  <meta property="og:image" content="https://shpark20.github.io/shportfolio/media/visualizer-poster.jpg">
+  <meta property="og:url" content="https://shpark20.github.io/shportfolio/">
+  <link rel="canonical" href="https://shpark20.github.io/shportfolio/">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/portfolio.css?v=20260929-project-cards">
+  <link rel="preload" href="fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/typography.css?v=20260929-project">
+  <link rel="stylesheet" href="css/profile-films.css?v=20260930-experience">
+  <link rel="stylesheet" href="css/refined.css?v=20260930-film-hierarchy">
+  <link rel="stylesheet" href="css/viewport.css?v=20260930-compact">
+  <link rel="stylesheet" href="css/public.css?v=20260930-public">
+  <script src="js/portfolio.js?v=20260930-public" defer></script>
+  <script src="js/memory-gallery.js?v=20260930-compact" defer></script>
 </head>
+<body class="design-refined publication-ready">
+<a class="skip-link" href="#project">작업물 바로 보기</a>
+<header class="site-header">
+  <a class="wordmark" href="#opening" aria-label="Seohyeon Park, 처음으로">s<span>p.</span></a>
+  <nav class="main-nav" aria-label="메인 메뉴">
+    <a href="#project">Project</a><a href="#ai-video">AI Video</a><a href="#profile">Profile</a><a href="#memory">Memory</a>
+  </nav>
+</header>
+<main>
+  <section class="opening" id="opening" aria-labelledby="opening-title">
+    <div class="hero-media"><video id="opening-video" autoplay muted loop playsinline preload="auto" poster="media/opening-poster.jpg" aria-label="박서현 포트폴리오 오프닝 루프 영상"><source src="media/opening-loop.mp4" type="video/mp4"></video></div>
+    <div class="hero-top"><span>VISUAL DESIGNER</span></div>
+    <p class="hero-thought">아이디어를<br>결과로 만듭니다.</p>
+    <div class="hero-bottom"><h1 id="opening-title">SEOHYEON PARK</h1><div class="hero-baseline"><span>박서현 · 영상·그래픽 디자이너</span><a href="#project">작업 보기 <span aria-hidden="true">↓</span></a><button id="loop-toggle" type="button" aria-label="오프닝 영상 일시정지" aria-pressed="false"><span class="loop-symbol" aria-hidden="true">Ⅱ</span> <span class="loop-label">PAUSE LOOP</span></button></div></div>
+  </section>
 
-<body>
-    <header>
-        <nav class="fixed">
-            <ul class="list">
-                <li data-menuanchor="page1">
-                    <a href="#page1">
-                        <img src="images/icon.png" alt="opening">
-                        <div class="go-page1">
-                            <p>Refresh?</p>
-                        </div>
-                    </a>
-                </li>
-                <li data-menuanchor="page2"><a href="#page2">PROJECT</a></li>
-                <li data-menuanchor="page3"><a href="#page3">ARCHIVE</a></li>
-                <li data-menuanchor="page4"><a href="#page4">FIELD</a></li>
-                <li data-menuanchor="page5"><a href="#page5">PROFILE</a></li>
-                <li data-menuanchor="page6"><a href="#page6">MEMORY</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="seohyeon">
-        <section class="section opening">
-            <div class="loop">
-                <video src="images/linkin.mp4" data-autoplay loop muted playsinline preload="auto"></video>
+  <section class="project section-dark section-pad" id="project" aria-labelledby="project-title">
+    <div class="project-overview viewport-panel">
+    <div class="section-label"><span>01 / PROJECT</span><span>앨범 패키지 · 모션그래픽</span></div>
+    <div class="project-intro">
+      <h2 id="project-title">Mortal Archive</h2>
+      <div class="intro-copy"><p>앨범 패키지부터 비주얼라이저,<br>SNS 영상까지 구성한 디자인 프로젝트.</p></div>
+      <nav class="project-index" aria-label="Mortal Archive 작품 목차">
+        <a class="project-card" href="#artboard" aria-label="01 Artboard — 앨범·패키지 디자인 보기">
+          <span class="project-card-preview preview-artboard" aria-hidden="true"><img src="media/mortal-archive-artboard.jpg" width="1920" height="1080" alt=""></span>
+          <span class="project-card-copy"><span class="project-card-title"><small>01</small><strong>앨범·패키지</strong><span class="project-card-arrow" aria-hidden="true">↓</span></span><span class="project-card-description">앨범 · 패키지 디자인</span></span>
+        </a>
+        <a class="project-card" href="#visualizer" aria-label="02 Visualizer — 음악 비주얼라이저 보기">
+          <span class="project-card-preview preview-visualizer" aria-hidden="true"><img src="media/visualizer-poster.jpg" width="1920" height="1080" alt=""><span class="project-preview-play">▶</span></span>
+          <span class="project-card-copy"><span class="project-card-title"><small>02</small><strong>Visualizer</strong><span class="project-card-arrow" aria-hidden="true">↓</span></span><span class="project-card-description">음악 비주얼라이저 · 16:9</span></span>
+        </a>
+        <a class="project-card" href="#promotions" aria-label="03 Promotion — SNS 숏폼 영상 두 편 보기">
+          <span class="project-card-preview preview-promotions" aria-hidden="true"><img src="media/box-poster.jpg" width="540" height="960" alt=""><img src="media/paper-poster.jpg" width="540" height="960" alt=""></span>
+          <span class="project-card-copy"><span class="project-card-title"><small>03</small><strong>SNS 프로모션</strong><span class="project-card-arrow" aria-hidden="true">↓</span></span><span class="project-card-description">SNS 숏폼 영상 2편 · 9:16</span></span>
+        </a>
+      </nav>
+    </div>
+    </div>
+    <figure class="artboard viewport-panel" id="artboard"><div class="media-heading project-work-heading"><h3><span>01</span> 앨범·패키지</h3><a class="text-link" href="media/mortal-archive-artboard.jpg" target="_blank" rel="noopener">이미지 크게 보기 ↗</a></div><a class="artboard-image" href="media/mortal-archive-artboard.jpg" target="_blank" rel="noopener" aria-label="Mortal Archive 아트보드 원본 크기로 보기"><img src="media/mortal-archive-artboard.jpg" width="1920" height="1080" loading="lazy" alt="Mortal Archive 앨범 아트보드: 아카이브 박스, 북클릿, 포스터, 타투 스티커, 포토 카드와 레코드 카드"></a><figcaption><p>아카이브 박스 · 북클릿 · 포스터 · 타투 스티커 · 포토카드 · 레코드 카드</p></figcaption></figure>
+    <figure class="main-film viewport-panel" id="visualizer">
+      <div class="media-heading project-work-heading"><h3><span>02</span> Visualizer</h3><span>16:9 · 00:36</span></div>
+      <div class="film-frame"><video id="main-video" controls playsinline preload="none" poster="media/visualizer-poster.jpg" aria-label="Mortal Archive 메인 비주얼라이저"><source src="media/mortal-archive-visualizer.mp4" type="video/mp4">브라우저가 영상을 지원하지 않습니다. <a href="media/mortal-archive-visualizer.mp4">영상 열기</a></video></div>
+      <figcaption class="film-caption"><div><h3>Mortal Archive — Visualizer</h3><p>앨범 그래픽을 움직임으로 구성한 음악 비주얼라이저.</p><div class="film-programs"><span class="eyebrow" id="visualizer-tools-label">사용 프로그램</span><ul aria-labelledby="visualizer-tools-label"><li>Blender</li><li>After Effects</li><li>Premiere Pro</li><li>Veo 3.1</li><li>Codex</li></ul></div></div><button class="text-link" type="button" data-play="main-video">PLAY FILM <span aria-hidden="true">↗</span></button></figcaption>
+    </figure>
+    <div class="promotions viewport-panel" id="promotions">
+      <div class="media-heading project-work-heading"><h3><span>03</span> SNS 프로모션</h3><span>9:16 · 2편</span></div>
+      <div class="promotion-copy"><p>앨범 구성품을 각각 소개하는<br>두 편의 세로 영상.</p></div>
+      <figure class="portrait-film">
+        <div class="phone-frame"><video id="box-video" controls playsinline preload="none" poster="media/box-poster.jpg" aria-label="Box ver. 앨범 SNS 홍보 영상"><source src="media/album-box.mp4" type="video/mp4"></video></div>
+        <figcaption class="portrait-details">
+          <div class="portrait-meta"><span>01</span><span>00:10</span></div>
+          <h4>Box ver.</h4>
+          <button class="portrait-play text-link" type="button" data-play="box-video" aria-label="Box ver. 영상 재생">PLAY FILM <span aria-hidden="true">↗</span></button>
+          <div class="film-programs portrait-programs"><span class="eyebrow" id="box-tools-label">사용 프로그램</span><ul aria-labelledby="box-tools-label"><li>Photoshop</li><li>Blender</li><li>After Effects</li><li>Codex</li></ul></div>
+        </figcaption>
+      </figure>
+      <figure class="portrait-film">
+        <div class="phone-frame"><video id="paper-video" controls playsinline preload="none" poster="media/paper-poster.jpg" aria-label="View Master (NFC) ver. 앨범 SNS 홍보 영상"><source src="media/paper-edges.mp4" type="video/mp4"></video></div>
+        <figcaption class="portrait-details">
+          <div class="portrait-meta"><span>02</span><span>00:10</span></div>
+          <h4>View Master (NFC) ver.</h4>
+          <button class="portrait-play text-link" type="button" data-play="paper-video" aria-label="View Master (NFC) ver. 영상 재생">PLAY FILM <span aria-hidden="true">↗</span></button>
+          <div class="film-programs portrait-programs"><span class="eyebrow" id="view-master-tools-label">사용 프로그램</span><ul aria-labelledby="view-master-tools-label"><li>Blender</li><li>Codex</li></ul></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="ai-section section-pad viewport-panel" id="ai-video" aria-labelledby="ai-title">
+    <div class="section-label"><span>02 / AI VIDEO</span></div>
+    <div class="ai-heading">
+      <h2 id="ai-title">당신이 보지 못한 하루</h2>
+      <p class="competition-name"><span>제8회 난생처음 노동공모전</span> <span class="competition-status">출품작</span></p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-media">
+        <div class="youtube-player" data-youtube="bhzYU6UyhgQ" data-title="당신이 보지 못한 하루 — 공모전 제출 영상"><a class="youtube-trigger" href="https://youtu.be/bhzYU6UyhgQ" target="_blank" rel="noopener noreferrer" aria-label="당신이 보지 못한 하루 YouTube에서 보기, 새 탭"><img src="https://i.ytimg.com/vi/bhzYU6UyhgQ/hqdefault.jpg" width="480" height="360" loading="lazy" alt="당신이 보지 못한 하루 영상 미리보기"><span class="play-icon" aria-hidden="true">▶</span><span class="player-title">YouTube에서 보기 <span aria-hidden="true">↗</span></span></a></div>
+        <div class="media-foot"><span>작품 영상</span><span>01:09</span></div>
+      </div>
+      <div class="feature-copy">
+        <h3>담당 작업</h3><p>제작 단계 기획 · 장면 생성<br>Premiere Pro 편집 · 사운드 보정</p>
+        <dl class="project-facts"><div><dt>제작 형태</dt><dd>AI 활용 · 팀 작업</dd></div></dl>
+        <a class="text-link" href="https://youtu.be/bhzYU6UyhgQ" target="_blank" rel="noopener noreferrer">YouTube에서 보기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+<section class="profile-section section-pad" id="profile" aria-labelledby="profile-title">
+    <div class="profile-overview viewport-panel">
+    <div class="section-label"><span>03 / PROFILE</span></div>
+    <div class="profile-heading"><h2 id="profile-title">Profile</h2><p>소품과 공간을 다룬 경험을 바탕으로<br>영상과 그래픽을 만듭니다.</p></div>
+    <div class="profile-grid">
+      <aside class="profile-identity"><div class="identity-summary"><div class="identity-line"><h3>박서현 <span>Seohyeon Park</span></h3><span>1995</span></div><p class="identity-role">Motion &amp; Visual Designer</p></div><div class="profile-links"><a href="https://instagram.com/shpark_717" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://shpark717.notion.site/PORTFOLIO-Seohyeon-39c6163919bf807a93c2d18f38e4c44e?source=copy_link" target="_blank" rel="noopener noreferrer">Notion ↗</a></div></aside>
+      <div class="profile-details">
+        <div class="resume-block"><h3><span>01</span> Education</h3><dl><div><dt>한국영상대학교</dt><dd>영상무대디자인과 졸업</dd></div><div><dt>Burton College</dt><dd>Film &amp; Photography 수료</dd></div></dl></div>
+        <div class="resume-block experience-block">
+          <h3><span>02</span> Experience</h3>
+          <dl class="experience-list">
+            <div class="experience-entry"><dt><small>DRAMA</small>모범가족</dt><dd>소품 제작 및 세팅</dd></div>
+            <div class="experience-entry experience-entry-linked">
+              <dt>
+                <a class="experience-work-link" href="https://www.youtube.com/watch?v=DT2bfnhXQCs" target="_blank" rel="noopener noreferrer" aria-label="CRAVITY VENI VIDI VICI 뮤직비디오 — YouTube에서 보기, 새 탭">
+                  <span class="experience-copy"><small>MUSIC VIDEO</small><span class="experience-title">CRAVITY <span>'VENI VIDI VICI'</span></span><span class="experience-link-hint">YouTube에서 보기 <span aria-hidden="true">↗</span></span></span>
+                  <span class="experience-thumb"><img src="images/cravity-veni-vidi-vici.jpg" width="1280" height="720" loading="lazy" alt=""><span class="experience-play" aria-hidden="true">▶</span></span>
+                </a>
+              </dt>
+              <dd>소품 세팅 및 현장 진행</dd>
             </div>
-            <nav class="title">
-                <div class="name">
-                    <h1>SEOHYEON PARK</h1>
-                </div>
-                <a class="portfolio">PORTFOLIO</a>
-                <ul class="menu">
-                    <li><a href="#page2">PROJECT</a></li>
-                    <li><a href="#page3">ARCHIVE</a></li>
-                    <li><a href="#page4">FIELD</a></li>
-                    <li><a href="#page5">PROFILE</a></li>
-                    <li><a href="#page6">MEMORY</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="section project">
-            <div class="innerp">
-                <div class="text-project">
-                    <h2>Project</h2>
-                    <p>Description<br> Description </p>
-                </div>
-                <nav>
-                    <div class="video">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/gAjRmAZWgZ8?si=VwVumfnfdYsHd0WU&amp;controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="banner">
-                        <div class="sub">
-                            <div class="poster">
-                                <img src="images/박서현2d그래픽.jpg" alt="poster">
-                                <p>poster</p>
-                            </div>
-                            <div class="albumcover">
-                                <img src="images/albumcover.png" alt="albumcover">
-                                <p>albumcover</p>
-                            </div>
-                            <div class="board">
-                                <img src="images/example.png" alt="board">
-                                <p>concept board</p>
-                            </div>
-
-                            <div class="making"><iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/jrmmJK9QwPo?si=kcMS35jEy0OpVlZ6"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <p>making film</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </nav>
-                <!-- 반응형 project -->
-
-                <div class="swiper sh">
-                    <div class="swiper-wrapper">
-                        <div class="on swiper-slide"><img src="images/박서현2d그래픽.jpg" alt="poster"></div>
-                        <div class="swiper-slide"><img src="images/albumcover.png" alt="2d"></div>
-                        <div class="swiper-slide"><img src="images/example.png" alt="example"></div>
-                        <div class="swiper-slide"><iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/jrmmJK9QwPo?si=kcMS35jEy0OpVlZ6"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="swiper-slide"><span class="caption">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. </span></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <ul class="buttons">
-                    <li class="on">POSTER</li>
-                    <li>2D</li>
-                    <li>CONCEPT</li>
-                    <li>MAKING</li>
-                    <li>ABOUT</li>
-                </ul>
-
+            <div class="experience-entry experience-entry-linked">
+              <dt>
+                <a class="experience-work-link" href="https://www.youtube.com/watch?v=T8QH2hTLsvo" target="_blank" rel="noopener noreferrer" aria-label="Milk-T 광고 — YouTube에서 보기, 새 탭">
+                  <span class="experience-copy"><small>COMMERCIAL</small><span class="experience-title">Milk-T</span><span class="experience-link-hint">YouTube에서 보기 <span aria-hidden="true">↗</span></span></span>
+                  <span class="experience-thumb"><img src="images/milk-t-commercial.jpg" width="1280" height="720" loading="lazy" alt=""><span class="experience-play" aria-hidden="true">▶</span></span>
+                </a>
+              </dt>
+              <dd>소품 세팅 및 현장 진행</dd>
             </div>
-        </section>
-        <section class="section archive">
-            <div class="innera">
-                <h2>Archive</h2>
-                <nav>
-                    <a href="images/product01.png" class="one" target="_blank"></a>
-                    <a href="images/product01.png" class="two" target="_blank"></a>
-                    <a href="images/product01.png" class="three" target="_blank"></a>
-                </nav>
-            </div>
-        </section>
-        <section class="section field">
-            <div class="innerf">
-                <figure class="text">
-                    <h2>Field</h2>
-                    <p>on-site shooting 설명</p>
-                </figure>
-                <div class="shoot">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tr03Jvh5mUg?si=rrAkwnhZ0IccGbh8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-        <section class="section profile">
-            <div class="innerpr">
-                <h2>Profile</h2>
-                <!-- 모바일 Profile slide -->
-                <ul class="profile-buttons">
-                    <li class="on">INFO</li>
-                    <li>SKILLS</li>
-                    <li>INTERVIEW</li>
-                    <li>MEMORY</li>
-                </ul>
-                <div class="profile-mobile">
-                    <div class="swiper profile-swiper">
-                        <div class="swiper-wrapper">
+            <div class="experience-entry"><dt><small>COMMERCIAL</small>청년떡집</dt><dd>소품 세팅 및 현장 진행</dd></div>
+          </dl>
+        </div>
+        <div class="resume-block"><h3><span>03</span> Tools</h3><ul class="tool-list"><li>After Effects</li><li>Premiere Pro</li><li>Photoshop</li><li>Illustrator</li><li>Blender</li><li>ComfyUI</li><li>Figma</li><li>VS Code</li></ul></div>
+      </div>
+    </div>
+    </div>
+</section>
 
-                            <article class="swiper-slide profile-slide mobile-info">
-                                <div class="inner">
-                                    <img src="images/profileref.jpg" alt="profile">
-                                    <div class="text">
-                                        <p>박서현, 1995</p>
-                                        <p>한국영상대학교 영상무대디자인과 졸업 <br> Burton College Film&Photography 수료</p>
-                                        <p>드라마 모범가족 소품 제작 및 세팅
-                                            <br>[MV] CRAVITY 소품 세팅 및 현장 진행 <br>광고 청년떡집, Milk-T 소품 세팅 및 현장 진행
-                                        </p>
-                                    </div>
-                                    <div class="sns">
-                                        <a href="#"><img src="images/youtube.png" alt="youtube"></a>
-                                        <a href="https://instagram.com/shpark_717" target="_blank"><img src="images/instagram.png" alt="insta"></a>
-                                        <a href="#"><img src="images/notion.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-skills">
-                                <div class="cubes">
-                                    <img src="images/aef.png" alt="ae">
-                                    <img src="images/fig.png" alt="fig">
-                                    <img src="images/pts.png" alt="pts">
-                                    <img src="images/pre.png" alt="pre">
-                                    <img src="images/com.png" alt="com">
-                                    <img src="images/vs.png" alt="vs">
-                                    <img src="images/aii.png" alt="ai">
-                                    <img src="images/blender.png" alt="blender">
-                                </div>
-
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-interview">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/mAp11beIY5A?si=95PUCuwIXK7RTcs1"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-memory">
-                                <div class="inner">
-                                    <figure class="polaroid1">
-                                        <img class="frame" src="images/polaroid01.png" alt="p1">
-                                        <p>[소품세팅] Milk-T 광고 1편, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid2">
-                                        <img src="images/polaroid02.png" alt="p2">
-                                        <p>[소품세팅] Milk-T 광고 2편, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid3">
-                                        <img src="images/polaroid03.png" alt="p3">
-                                        <p>[소품세팅] 드라마 모범가족, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid4">
-                                        <img src="images/polaroid04.png" alt="p4">
-                                        <p>[소품세팅] Cravity MV, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid5">
-                                        <img src="images/polaroid05.png" alt="p5">
-                                        <p>[연출보조] 유튜브 ㅇㅇㅇ, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid6">
-                                        <img src="images/polaroid06.png" alt="p6">
-                                        <p>[촬영보조] 밴드 Route49, 2026</p>
-                                    </figure>
-                                    <figure class="polaroid7">
-                                        <img src="images/polaroid07.png" alt="p7">
-                                        <p>[촬영보조] 밴드 Route49, 2026</p>
-                                    </figure>
-                                    <figure class="polaroid8">
-                                        <img src="images/polaroid08.png" alt="p8">
-                                        <p>카메라 수업,2018</p>
-                                    </figure>
-                                    <figure class="polaroid9">
-                                        <img src="images/polaroid01.png" alt="p9">
-                                    </figure>
-                                    <figure class="polaroid10">
-                                        <img src="images/polaroid01.png" alt="p10">
-                                    </figure>
-                                </div>
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-info">
-                                <div class="inner">
-                                    <img src="images/profileref.jpg" alt="profile">
-                                    <div class="text">
-                                        <p>박서현, 1995</p>
-                                        <p>한국영상대학교 영상무대디자인과 졸업 <br> Burton College Film&Photography 수료</p>
-                                        <p>드라마 모범가족 소품 제작 및 세팅
-                                            <br>[MV] CRAVITY 소품 세팅 및 현장 진행 <br>광고 청년떡집, Milk-T 소품 세팅 및 현장 진행
-                                        </p>
-                                    </div>
-                                    <div class="sns">
-                                        <a href="#">Youtube</a>
-                                        <a href="https://instagram.com/shpark_717" target="_blank">Instagram</a>
-                                        <a href="#">Notion</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-skills">
-                                <div class="cubes">
-                                    <img src="images/aef.png" alt="ae">
-                                    <img src="images/fig.png" alt="fig">
-                                    <img src="images/pts.png" alt="pts">
-                                    <img src="images/pre.png" alt="pre">
-                                    <img src="images/com.png" alt="com">
-                                    <img src="images/vs.png" alt="vs">
-                                    <img src="images/aii.png" alt="ai">
-                                    <img src="images/blender.png" alt="blender">
-                                </div>
-
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-interview">
-                                <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/mAp11beIY5A?si=95PUCuwIXK7RTcs1"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </article>
-
-                            <article class="swiper-slide profile-slide mobile-memory">
-                                <div class="inner">
-                                    <figure class="polaroid1">
-                                        <img class="frame" src="images/polaroid01.png" alt="p1">
-                                        <p>[소품세팅] Milk-T 광고 1편, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid2">
-                                        <img src="images/polaroid02.png" alt="p2">
-                                        <p>[소품세팅] Milk-T 광고 2편, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid3">
-                                        <img src="images/polaroid03.png" alt="p3">
-                                        <p>[소품세팅] 드라마 모범가족, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid4">
-                                        <img src="images/polaroid04.png" alt="p4">
-                                        <p>[소품세팅] Cravity MV, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid5">
-                                        <img src="images/polaroid05.png" alt="p5">
-                                        <p>[연출보조] 유튜브 ㅇㅇㅇ, 2021</p>
-                                    </figure>
-                                    <figure class="polaroid6">
-                                        <img src="images/polaroid06.png" alt="p6">
-                                        <p>[촬영보조] 밴드 Route49, 2026</p>
-                                    </figure>
-                                    <figure class="polaroid7">
-                                        <img src="images/polaroid07.png" alt="p7">
-                                        <p>[촬영보조] 밴드 Route49, 2026</p>
-                                    </figure>
-                                    <figure class="polaroid8">
-                                        <img src="images/polaroid08.png" alt="p8">
-                                        <p>카메라 수업,2018</p>
-                                    </figure>
-                                    <figure class="polaroid9">
-                                        <img src="images/polaroid01.png" alt="p9">
-                                    </figure>
-                                    <figure class="polaroid10">
-                                        <img src="images/polaroid01.png" alt="p10">
-                                    </figure>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="box profile-desktop">
-                    <div class="left">
-                        <div class="interview">
-                            <h3>Self interview</h3>
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/mAp11beIY5A?si=95PUCuwIXK7RTcs1"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="skillinner">
-                            <h3>Skills</h3>
-                            <div class="skill">
-                                <img src="images/skills.png" alt="skills">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="inner">
-                            <span class="inform">
-                                <h3>Info</h3>
-                            </span>
-                            <div class="lang">
-                                <span>Language</span>
-                                <a class="kor on">[KOR]</a>
-                                <a class="ENG">[ENG]</a>
-                            </div>
-                        </div>
-                        <nav>
-                            <p>Objects, spaces, and images are organized into visual memory.</p>
-                            <p>박서현, 1995</p>
-                            <p>한국영상대학교 영상무대디자인과 <br> Burton College Film&Photography 수료</p>
-                            <p>드라마 모범가족 소품 제작 및 세팅
-                                <br>[MV] CRAVITY 소품 세팅 및 현장 진행 <br>광고 청년떡집, Milk-T 소품 세팅 및 현장 진행
-                            </p>
-                        </nav>
-                            <div class="sns"> 
-                            <h3>Visit</h3>
-                            <a href="#"><img src="images/youtube.png" alt="youtube"></a> <br>
-                            <a href="https://instagram.com/shpark_717" target="_blank"><img src="images/instagram.png" alt="insta"></a> <br>
-                            <a href="https://shpark717.notion.site/PORTFOLIO-Seohyeon-39c6163919bf807a93c2d18f38e4c44e?source=copy_link"
-                                target="_blank"><img src="images/notion.png" alt="notion"></a>
-                        </div>
-                        
-                        <!-- <div class="rect"></div>  -->
-                    </div>
-                    <div class="right">
-                        <div class="photo">
-                        </div>
-                        <a class="access" href="#page6">ACCESS MEMORY</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section memory-section">
-            <div class="inner">
-                <div class="text">
-                    <h2>Memory</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                </div>
-                <figure class="polaroid1">
-                    <img class="frame" src="images/polaroid01.png" alt="p1">
-                    <p>[소품세팅] <br> Milk-T 광고 1편, 2021</p>
-                </figure>
-                <figure class="polaroid2">
-                    <img src="images/polaroid02.png" alt="p2">
-                    <p>[소품세팅] Milk-T 광고 2편, 2021</p>
-                </figure>
-                <figure class="polaroid3">
-                    <img src="images/polaroid03.png" alt="p3">
-                    <p>[소품세팅] 드라마 모범가족, 2021</p>
-                </figure>
-                <figure class="polaroid4">
-                    <img src="images/polaroid04.png" alt="p4">
-                    <p>[소품세팅] Cravity MV, 2021</p>
-                </figure>
-                <figure class="polaroid5">
-                    <img src="images/polaroid05.png" alt="p5">
-                    <p>[연출보조] 유튜브 ㅇㅇㅇ, 2021</p>
-                </figure>
-                <figure class="polaroid6">
-                    <img src="images/polaroid06.png" alt="p6">
-                    <p>[촬영보조] 밴드 Route49, 2026</p>
-                </figure>
-                <figure class="polaroid7">
-                    <img src="images/polaroid07.png" alt="p7">
-                    <p>[촬영보조] 밴드 Route49, 2026</p>
-                </figure>
-                <figure class="polaroid8">
-                    <img src="images/polaroid08.png" alt="p8">
-                    <p>카메라 수업,2018</p>
-                </figure>
-                <figure class="polaroid9">
-                    <img src="images/polaroid01.png" alt="p9">
-                </figure>
-                <figure class="polaroid10">
-                    <img src="images/polaroid01.png" alt="p10">
-                </figure>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>All Right Reserved</p>
-    </footer>
-
+  <section class="memory-section section-pad viewport-panel" id="memory" aria-labelledby="memory-title">
+    <div class="section-label"><span>04 / MEMORY</span></div>
+    <div class="memory-heading"><h2 id="memory-title">현장 기록</h2></div>
+    <div class="polaroid-grid" id="memory-gallery" role="group" aria-label="현장 사진 갤러리" tabindex="0">
+      <button class="polaroid" type="button" data-memory="media/memory-01.webp" data-caption="Milk-T, take 01 · 소품 세팅 · 2021" aria-label="Milk-T, take 01, 소품 세팅, 2021 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-01.webp" width="1330" height="1484" loading="lazy" alt="Milk-T, take 01 현장 사진"></span><span class="polaroid-caption"><strong>Milk-T, take 01</strong><span>소품 세팅<small>2021 — 01</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-02.webp" data-caption="Milk-T, take 02 · 소품 세팅 · 2021" aria-label="Milk-T, take 02, 소품 세팅, 2021 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-02.webp" width="1330" height="1484" loading="lazy" alt="Milk-T, take 02 현장 사진"></span><span class="polaroid-caption"><strong>Milk-T, take 02</strong><span>소품 세팅<small>2021 — 02</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-03.webp" data-caption="모범가족 · 소품 세팅 · 2021" aria-label="모범가족, 소품 세팅, 2021 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-03.webp" width="1330" height="1484" loading="lazy" alt="모범가족 현장 사진"></span><span class="polaroid-caption"><strong>모범가족</strong><span>소품 세팅<small>2021 — 03</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-04.webp" data-caption="CRAVITY MV · 소품 세팅 · 2021" aria-label="CRAVITY MV, 소품 세팅, 2021 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-04.webp" width="1330" height="1484" loading="lazy" alt="CRAVITY MV 현장 사진"></span><span class="polaroid-caption"><strong>CRAVITY MV</strong><span>소품 세팅<small>2021 — 04</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-05.webp" data-caption="Behind the scene · 연출 보조 · 2021" aria-label="Behind the scene, 연출 보조, 2021 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-05.webp" width="1330" height="1484" loading="lazy" alt="Behind the scene 현장 사진"></span><span class="polaroid-caption"><strong>Behind the scene</strong><span>연출 보조<small>2021 — 05</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-06.webp" data-caption="Route49, take 01 · 촬영 보조 · 2026" aria-label="Route49, take 01, 촬영 보조, 2026 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-06.webp" width="1330" height="1484" loading="lazy" alt="Route49, take 01 현장 사진"></span><span class="polaroid-caption"><strong>Route49, take 01</strong><span>촬영 보조<small>2026 — 06</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-07.webp" data-caption="Route49, take 02 · 촬영 보조 · 2026" aria-label="Route49, take 02, 촬영 보조, 2026 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-07.webp" width="1330" height="1484" loading="lazy" alt="Route49, take 02 현장 사진"></span><span class="polaroid-caption"><strong>Route49, take 02</strong><span>촬영 보조<small>2026 — 07</small></span></span></button>
+<button class="polaroid" type="button" data-memory="media/memory-08.webp" data-caption="Camera study · 카메라 수업 · 2018" aria-label="Camera study, 카메라 수업, 2018 사진 크게 보기"><span class="polaroid-photo"><img src="media/memory-08.webp" width="1330" height="1484" loading="lazy" alt="Camera study 현장 사진"></span><span class="polaroid-caption"><strong>Camera study</strong><span>카메라 수업<small>2018 — 08</small></span></span></button>
+    </div>
+    <div class="memory-note">
+      <div class="gallery-controls" aria-label="현장 사진 넘기기">
+        <button id="memory-prev" type="button" aria-label="이전 사진" aria-controls="memory-gallery"><span aria-hidden="true">←</span></button>
+        <span id="memory-range" role="status" aria-live="polite" aria-atomic="true">1–4 / 8</span>
+        <button id="memory-next" type="button" aria-label="다음 사진" aria-controls="memory-gallery"><span aria-hidden="true">→</span></button>
+      </div>
+      <span class="memory-sign">Seohyeon.</span>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-top"><div><p class="footer-name">SEOHYEON PARK</p><p class="footer-role">박서현 · 영상·그래픽 디자이너</p></div><div class="footer-links"><a href="https://instagram.com/shpark_717" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://shpark717.notion.site/PORTFOLIO-Seohyeon-39c6163919bf807a93c2d18f38e4c44e?source=copy_link" target="_blank" rel="noopener noreferrer">Notion ↗</a></div></div>
+  <div class="footer-baseline"><span>© <span id="copyright-year">2026</span> SEOHYEON PARK</span><a href="#opening">맨 위로 ↑</a></div>
+</footer>
+<dialog id="memory-dialog" aria-labelledby="memory-dialog-caption">
+  <button class="dialog-close" type="button" aria-label="사진 닫기"><span aria-hidden="true">×</span></button>
+  <figure class="memory-print">
+    <div class="memory-print-photo"><img id="memory-dialog-image" alt=""></div>
+    <figcaption id="memory-dialog-caption"></figcaption>
+  </figure>
+</dialog>
 </body>
-
 </html>
