@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.publication-ready .poster-section{background:var(--refined-dark,#151815);color:var(--paper);display:flex;flex-direction:column;justify-content:center}
+.publication-ready .poster-section .section-label{border-color:var(--line)}
+.publication-ready .poster-section .section-label>span{color:var(--refined-secondary,#a6aaa1)}
+.publication-ready .poster-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(32px,6vw,96px);margin-top:24px}
+.publication-ready .poster-copy{min-width:0}
+.publication-ready .poster-category{font-size:11px;letter-spacing:.1em;line-height:1.6;color:var(--refined-secondary,#a6aaa1);margin-bottom:18px}
+.publication-ready .poster-copy h2{font-size:clamp(28.8px,3.6vw,54.4px);line-height:1.12;font-weight:500;letter-spacing:-.045em;overflow-wrap:anywhere}
+.publication-ready .poster-subtitle{font-size:clamp(20px,2.3vw,34px);line-height:1.2;letter-spacing:-.025em;color:var(--accent);margin-top:18px}
+.publication-ready .poster-description{font-size:15px;line-height:1.8;color:var(--refined-secondary,#a6aaa1);margin-top:28px;word-break:keep-all}
+.publication-ready .poster-view{min-height:44px;align-items:center;padding:8px 0;margin-top:24px}
+.publication-ready .poster-figure{width:min(100%,max(260px,calc((100svh - var(--header-height) - 124px)*2/3)));justify-self:center}
+.publication-ready .poster-image{display:block;background:#101210}
+.publication-ready .poster-image img{width:100%;height:auto;aspect-ratio:2/3;object-fit:contain}
+.publication-ready .poster-figure figcaption{font-size:10px;line-height:1.6;letter-spacing:.06em;color:var(--refined-secondary,#a6aaa1);margin-top:12px}
+@media(max-width:700px){
+  .publication-ready .poster-layout{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:24px}
+  .publication-ready .poster-copy h2{font-size:clamp(28px,8vw,40px)}
+  .publication-ready .poster-category{margin-bottom:12px}
+  .publication-ready .poster-subtitle{font-size:22px;margin-top:12px}
+  .publication-ready .poster-description{font-size:14px;margin-top:18px}
+  .publication-ready .poster-view{margin-top:12px}
+  .publication-ready .poster-figure{width:min(100%,420px)}
+  .publication-ready .site-header .main-nav{min-width:0;overflow-x:auto;gap:12px;scrollbar-width:none}
+  .publication-ready .site-header .main-nav::-webkit-scrollbar{display:none}
+  .publication-ready .main-nav a{flex-shrink:0}
+}
