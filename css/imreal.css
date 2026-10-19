@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.publication-ready .imreal-section{background:#1a2119;color:var(--paper);display:flex;flex-direction:column;justify-content:center}
+.publication-ready .imreal-section .section-label{border-color:#ffffff26;color:var(--refined-secondary)}
+.publication-ready .imreal-section .section-label>span{color:inherit}
+.publication-ready .imreal-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(32px,6vw,96px);margin-top:24px}
+.publication-ready .imreal-copy{max-width:510px;min-width:0}
+.publication-ready .imreal-category{font-size:12px;line-height:1.6;color:var(--refined-secondary);margin-bottom:16px}
+.publication-ready .imreal-copy h2{font-size:clamp(36px,4.4vw,67px);font-weight:500;line-height:1.08;letter-spacing:-.045em}
+.publication-ready .imreal-tagline{font-size:clamp(22px,2.3vw,32px);line-height:1.4;letter-spacing:-.03em;color:#e7edb8;margin-top:16px}
+.publication-ready .imreal-description{font-size:16px;line-height:1.8;margin-top:24px;word-break:keep-all}
+.publication-ready .imreal-concept{font-size:14px;line-height:1.85;color:var(--refined-secondary);margin-top:12px;max-width:410px;word-break:keep-all}
+.publication-ready .imreal-facts{margin:28px 0 0;border-top:1px solid #ffffff26;padding-top:16px;display:grid;gap:10px}
+.publication-ready .imreal-facts>div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;font-size:13px;line-height:1.7}
+.publication-ready .imreal-facts dt{color:var(--refined-secondary)}
+.publication-ready .imreal-facts dd{margin:0;word-break:keep-all}
+.publication-ready .imreal-play{font-size:13px;min-height:44px;align-items:center;padding:8px 0;margin-top:20px;background:transparent}
+.publication-ready .imreal-film{width:min(100%,max(240px,calc((100svh - var(--header-height) - 124px)*9/16)));justify-self:center}
+.publication-ready .imreal-film video{width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#3e92ed}
+.publication-ready .imreal-film figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:11px;line-height:1.6;color:var(--refined-secondary)}
+@media(min-width:701px) and (max-width:1000px){.publication-ready .site-header .main-nav{gap:clamp(12px,2vw,20px)}}
+@media(max-width:700px){
+  .publication-ready .imreal-layout{grid-template-columns:minmax(0,1fr);gap:28px;margin-top:24px}
+  .publication-ready .imreal-copy{max-width:none}
+  .publication-ready .imreal-copy h2{font-size:clamp(36px,10vw,48px)}
+  .publication-ready .imreal-category{margin-bottom:12px}
+  .publication-ready .imreal-tagline{font-size:24px;margin-top:12px}
+  .publication-ready .imreal-description{font-size:15px;margin-top:20px}
+  .publication-ready .imreal-concept{font-size:14px;max-width:none}
+  .publication-ready .imreal-facts{margin-top:20px}
+  .publication-ready .imreal-facts>div{grid-template-columns:88px minmax(0,1fr);gap:10px}
+  .publication-ready .imreal-film{width:min(100%,360px)}
+  .publication-ready .imreal-play{margin-top:14px}
+}
