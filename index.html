@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/imreal.css?v=20261019">
   <script src="js/portfolio.js?v=20260930-public" defer></script>
   <script src="js/memory-gallery.js?v=20260930-compact" defer></script>
+  <link rel="stylesheet" href="css/mortal-process.css?v=20261030">
 </head>
 <body class="design-refined publication-ready">
 <a class="skip-link" href="#project">작업물 바로 보기</a>
@@ -46,7 +47,11 @@
     <div class="section-label"><span>01 / PROJECT</span><span>앨범 패키지 · 모션그래픽</span></div>
     <div class="project-intro">
       <h2 id="project-title">Mortal Archive</h2>
-      <div class="intro-copy"><p>앨범 패키지부터 비주얼라이저,<br>SNS 영상까지 구성한 디자인 프로젝트.</p></div>
+      <div class="intro-copy ma-intro-copy">
+        <p class="ma-theme">유한한 존재의 가치를 기록하다.</p>
+        <p>시간 속에 존재하는 것들의 유한함과 그 가치를<br class="ma-desktop-break"> 앨범 패키지와 영상으로 표현한 프로젝트.</p>
+        <a class="ma-process-link" href="#making-of">제작 과정 보기 <span aria-hidden="true">↓</span></a>
+      </div>
       <nav class="project-index" aria-label="Mortal Archive 작품 목차">
         <a class="project-card" href="#artboard" aria-label="01 Artboard — 앨범·패키지 디자인 보기">
           <span class="project-card-preview preview-artboard" aria-hidden="true"><img src="media/mortal-archive-artboard.jpg?v=20261007" width="1920" height="1080" alt=""></span>
@@ -67,8 +72,37 @@
     <figure class="main-film viewport-panel" id="visualizer">
       <div class="media-heading project-work-heading"><h3><span>02</span> Visualizer</h3><span>16:9 · 00:36</span></div>
       <div class="film-frame"><video id="main-video" controls playsinline preload="none" poster="media/visualizer-poster.jpg" aria-label="Mortal Archive 메인 비주얼라이저"><source src="media/mortal-archive-visualizer.mp4?v=20261004" type="video/mp4">브라우저가 영상을 지원하지 않습니다. <a href="media/mortal-archive-visualizer.mp4?v=20261004">영상 열기</a></video></div>
-      <figcaption class="film-caption"><div><h3>Mortal Archive — Visualizer</h3><p>앨범 그래픽을 움직임으로 구성한 음악 비주얼라이저.</p><div class="film-programs"><span class="eyebrow" id="visualizer-tools-label">사용 프로그램</span><ul aria-labelledby="visualizer-tools-label"><li>Blender</li><li>After Effects</li><li>Premiere Pro</li><li>Veo 3.1</li><li>Codex</li></ul></div></div><button class="text-link" type="button" data-play="main-video">PLAY FILM <span aria-hidden="true">↗</span></button></figcaption>
+      <figcaption class="film-caption"><div><h3>Mortal Archive — Visualizer</h3><p>얼음·초·모래시계로 시간의 흐름을 시각화한 음악 비주얼라이저.</p><div class="film-programs"><span class="eyebrow" id="visualizer-tools-label">사용 프로그램</span><ul aria-labelledby="visualizer-tools-label"><li>Blender</li><li>After Effects</li><li>Premiere Pro</li></ul></div></div><button class="text-link" type="button" data-play="main-video">PLAY FILM <span aria-hidden="true">↗</span></button></figcaption>
     </figure>
+    <section class="ma-process" id="making-of" aria-labelledby="ma-process-title">
+  <div class="ma-process-heading">
+    <div><p class="ma-eyebrow">MORTAL ARCHIVE / MAKING OF</p><h3 id="ma-process-title">음악에서 장면으로.</h3></div>
+    <p>먼저 생성한 음악에 맞춰<br>시간별 콘티를 짜고 장면을 구체화했습니다.</p>
+  </div>
+  <ol class="ma-steps" aria-label="비주얼라이저 제작 순서">
+    <li><span>01</span><strong>음악 생성</strong><small>장면의 출발점</small></li>
+    <li><span>02</span><strong>타임 콘티</strong><small>구간별 화면 설계</small></li>
+    <li><span>03</span><strong>3D · 모션</strong><small>Blender · After Effects</small></li>
+    <li><span>04</span><strong>최종 편집</strong><small>Premiere Pro</small></li>
+  </ol>
+  <div class="ma-details" role="group" aria-labelledby="ma-roles-title">
+    <h4 class="ma-details-title" id="ma-roles-title">주제와 제작 역할</h4>
+    <div class="ma-details-content">
+      <div class="ma-motifs" aria-label="유한함을 표현하는 세 오브젝트">
+        <figure><img src="media/mortal-process/ice.webp" width="1000" height="1000" loading="lazy" alt="직접 모델링한 투명한 얼음"><figcaption><strong>얼음</strong><span>시간에 따라 변하는 형태</span></figcaption></figure>
+        <figure><img src="media/mortal-process/candle-normal.webp" width="1000" height="563" loading="lazy" alt="직접 모델링한 초와 불꽃"><figcaption><strong>초</strong><span>빛을 내며 소모되는 존재</span></figcaption></figure>
+        <figure><img src="media/mortal-process/hourglass.webp" width="1000" height="563" loading="lazy" alt="직접 모델링한 모래시계"><figcaption><strong>모래시계</strong><span>유한한 시간의 흐름</span></figcaption></figure>
+      </div>
+      <dl class="ma-credits">
+        <div><dt>기획</dt><dd>음악 생성 후 타임 콘티 구성 · 장면 설계</dd></div>
+        <div><dt>직접 제작</dt><dd>얼음·초·모래시계 모델링 — Blender<br>오브젝트 영상 제작 — After Effects</dd></div>
+        <div><dt>AI 활용</dt><dd>음악 및 인물 영상 생성</dd></div>
+        <div><dt>최종 편집</dt><dd>제작·생성한 영상의 구성과 편집 — Premiere Pro</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
     <div class="promotions viewport-panel" id="promotions">
       <div class="media-heading project-work-heading"><h3><span>03</span> SNS 프로모션</h3><span>9:16 · 2편</span></div>
       <div class="promotion-copy"><p>앨범 구성품을 각각 소개하는<br>두 편의 세로 영상.</p></div>
@@ -270,3 +304,4 @@
 </dialog>
 </body>
 </html>
+
