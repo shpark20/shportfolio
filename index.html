@@ -25,13 +25,14 @@
   <script src="js/portfolio.js?v=20260930-public" defer></script>
   <script src="js/memory-gallery.js?v=20260930-compact" defer></script>
   <link rel="stylesheet" href="css/mortal-process.css?v=20261030">
+  <link rel="stylesheet" href="css/lightstick.css?v=20261030">
 </head>
 <body class="design-refined publication-ready">
 <a class="skip-link" href="#project">작업물 바로 보기</a>
 <header class="site-header">
   <a class="wordmark" href="#opening" aria-label="Seohyeon Park, 처음으로">s<span>p.</span></a>
   <nav class="main-nav" aria-label="메인 메뉴">
-    <a href="#project">Project</a><a href="#imreal">SNS Ads</a><a href="#ai-video">AI Video</a><a href="#channels">Channels</a><a href="#poster">Poster</a><a href="#profile">Profile</a><a href="#memory">Memory</a>
+    <a href="#project">Project</a><a href="#imreal">3D Motion</a><a href="#ai-video">AI Video</a><a href="#channels">Channels</a><a href="#poster">Poster</a><a href="#profile">Profile</a><a href="#memory">Memory</a>
   </nav>
 </header>
 <main>
@@ -127,8 +128,29 @@
     </div>
   </section>
 
-  <section class="imreal-section section-pad viewport-panel" id="imreal" aria-labelledby="imreal-title">
-    <div class="section-label"><span>02 / PERSONAL WORK</span><span>3D MOTION · SNS FILM</span></div>
+  <section class="imreal-section section-pad viewport-panel" id="imreal" aria-label="3D Motion 개인 작업">
+    <div class="section-label"><span>02 / PERSONAL WORK</span><span>3D MOTION · PRODUCT FILM</span></div>
+    <nav class="motion-index" aria-label="3D Motion 작품 목차"><a href="#lightstick">01 / Light Stick <span aria-hidden="true">↓</span></a><a href="#imreal-title">02 / I’m Real <span aria-hidden="true">↓</span></a></nav>
+    
+          
+
+          <article class="md-work" id="lightstick" aria-labelledby="lightstick-title">
+        <div class="md-copy">
+          <p class="md-category">MD DESIGN · PERSONAL WORK</p>
+          <h2 id="lightstick-title">Light Stick</h2>
+          <dl class="md-facts">
+            <div><dt>제작 형태</dt><dd>개인 작업</dd></div>
+            <div><dt>담당 작업</dt><dd>디자인 · 3D 모델링</dd></div>
+            <div><dt>사용 프로그램</dt><dd>Blender</dd></div>
+          </dl>
+          <button class="text-link md-play" type="button" data-play="lightstick-video">PLAY FILM <span aria-hidden="true">↗</span></button>
+        </div>
+        <figure class="md-film">
+          <video id="lightstick-video" controls muted loop playsinline preload="none" width="1080" height="1440" poster="media/lightstick-poster.webp" aria-label="응원봉 MD 디자인 — 4초 제품 영상"><source src="media/lightstick-md.mp4" type="video/mp4">브라우저가 영상을 지원하지 않습니다. <a href="media/lightstick-md.mp4">영상 열기</a></video>
+          <figcaption><span>Light Stick — MD Design</span><span>3:4 · 00:04</span></figcaption>
+        </figure>
+      </article>
+
     <div class="imreal-layout">
       <div class="imreal-copy">
         <p class="imreal-category">I'm Real 주스 · Personal Work</p>
@@ -304,4 +326,5 @@
 </dialog>
 </body>
 </html>
+
 
